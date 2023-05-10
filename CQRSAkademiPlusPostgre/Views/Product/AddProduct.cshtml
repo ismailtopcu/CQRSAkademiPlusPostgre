@@ -1,0 +1,46 @@
+﻿@model CreateProductCommand
+@{
+    ViewData["Title"] = "AddProduct";
+}
+
+<form method="post">
+    <div class="container">
+        <br />
+        <br />
+        <label>Ürün Adı</label>
+        <input type="text" asp-for="ProductName" class="form-control" />
+        <br />
+        <label>Ürün Markası</label>
+        <input type="text" asp-for="ProductBrand" class="form-control" />
+        <br />
+        <label>Ürün Kategorisi</label>
+        <input type="text" asp-for="ProductCategory" class="form-control" />
+        <br />
+        <label>Ürün Fiyatı</label>
+        <input type="text" asp-for="ProductPrice" class="form-control" />
+        <br />
+        <label>Stok</label>
+        <input type="text" asp-for="ProductStock" class="form-control" />
+        <br />
+        <label>Stok Türü</label>
+        <input type="text" asp-for="ProductStockType" class="form-control" />
+        <br />
+        <label>Tedarikçi Firma</label>
+        <input type="text" asp-for="Publisher" class="form-control" />
+        <br />
+        <label>Vergi</label>
+        <input type="text" asp-for="Tax" class="form-control" />
+        <br />
+        <label>Son Kullanma Tarihi</label>
+        <input type="text" asp-for="LastUseDate"  class="form-control" />
+        <br />
+        <label>Barkod</label>
+        <input type="text" asp-for="Barcode" class="form-control" />
+        <br />
+        <label>Raf Numarası</label>
+        <input type="text" asp-for="ShelfNumber" class="form-control" />
+        <br />
+        <button class="btn btn-primary">Yeni Ürün Ekle</button>
+    </div>
+</form>
+

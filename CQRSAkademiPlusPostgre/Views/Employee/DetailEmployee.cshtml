@@ -1,0 +1,21 @@
+﻿@model GetEmployeeByIDQueryResult
+@{
+    ViewData["Title"] = "DetailEmployee";
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class=" container">
+    <br />
+    <br />
+    <input type="hidden"  asp-for="EmployeeID" />
+    <label>Personel Adı</label>
+    <input type="text" class="form-control" asp-for="EmployeeName" />
+    <br />
+    <label>Personel Soyadı</label>
+    <input type="text" class="form-control" asp-for="EmployeeSurname" />
+    <br />
+    <label>Personel Şehri</label>
+    <input type="text" class="form-control" asp-for="EmployeeCity" />
+    <br />
+    <a href="/Employee/Index/" class="btn btn-primary">Personel Listesine Dön</a>
+</div>
+

@@ -1,0 +1,35 @@
+﻿@model CreateEmployeeCommand
+@{
+    ViewData["Title"] = "AddEmployee";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<div class=" container">
+    <br />
+    <form method="post" class="form-control">
+
+        <br />
+        <label>Personel Adı</label>
+        <input type="text" class="form-control" asp-for="EmployeeName" />
+        <label>Personel Soyadı</label>
+        <input type="text" class="form-control" asp-for="EmployeeSurname" />
+        <br />
+        <label>Personel Ünvanı</label>
+        <input type="text" class="form-control" asp-for="EmployeeTitle" />
+        <br />
+        <label>Personel Yaşı</label>
+        <input type="text" class="form-control" asp-for="EmployeeAge" />
+        <br />
+        <label>Personel Şehri</label>
+        <input type="text" class="form-control" asp-for="EmployeeCity" />
+        <br />
+        <label>Personel Maaşı</label>
+        <input type="text" class="form-control" asp-for="EmployeeSalary" />
+        <br />
+        <button class="btn btn-primary">Personel Ekle</button>
+    </form>
+</div>
+
+
